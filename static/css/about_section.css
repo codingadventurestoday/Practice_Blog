@@ -1,0 +1,22 @@
+article#about-section{
+    display: flex;
+    flex-direction: column;
+}
+
+div.about-photo{
+    display: flex;
+    justify-content: center;
+}
+
+div.about-photo img{
+    min-width: 260px;
+    min-height: 40vh;
+    max-height: 700px;
+    width: 60vw;
+}
+
+div.about-story{
+    display: flex;
+    justify-content: center;
+
+}

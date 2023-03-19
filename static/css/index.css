@@ -1,62 +1,11 @@
+@import "about_section.css";
+@import "logo_and_nav.css";
+@import "subscribe.css";
+
 body{
     background-image: linear-gradient(to left bottom, #ffedcb, #bcd2ae, #78b4a6, #4491a3, #426a93);
 }
 
-header.logo-display-container{
-    background-image: url("../images/logo-display.jpg");
-    background-size: cover;
-    min-width: 100%;
-    min-height: 30vh;
-    max-height: 40vh;
-}
-
-h3.logo-name{
-    display: flex;
-    justify-content: center;
-    color:antiquewhite;
-}
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    /*background-color: ; */
-}
-
-nav a{
-    text-decoration: none;
-   /* color: #D3D3D3;*/
-}
-
-nav a:hover{
-    text-decoration: underline;
-    color: black;
-}
-
-article#about-section{
-    display: flex;
-    flex-direction: column;
-}
-
-div.about-photo{
-    display: flex;
-    justify-content: center;
-}
-
-div.about-photo img{
-    min-width: 260px;
-    min-height: 40vh;
-    max-height: 700px;
-    width: 60vw;
-}
-
-div.about-story{
-    display: flex;
-    justify-content: center;
-
-}
-/* fix suggested article's photos*/
 div.suggested-articles-container{
     display: grid;
     grid-template-columns: .5fr 1fr .5fr 1fr .5fr;
@@ -117,77 +66,6 @@ article#article-four{
     border: 2px double purple;
     color: #ffedcb;
     background-color: #426a93;
-}
-/*
-div#subscribe{
-   background-color: #1E90FF;
-}
-*/
-
-h3.subscribe-subtitle{
-    display: flex;
-    justify-content: center;
-   /* color: #D3D3D3;*/
-}
-
-form.subscribe-form {
-    display: grid;
-}
-
-form.subscribe-form label{
-    display: flex;
-    justify-content: center;
-   /* color: #D3D3D3;*/
-
-}
-
-form.subscribe-form input{
-    display: flex;
-    justify-self: center;
-    min-width: 200px;
-    max-width: 300px;
-}
-
-form.subscribe-form input:invalid{
-    border: 1.5px solid red;
-    max-width: 300px;
-}
-
-form.subcribe-form input:valid{
-    border: 1.5px solid green;
-}
-
-button#button{
-    display: flex;
-    justify-self: center;
-    padding: 12px 6px 12px 6px;
-    max-width: 160px;
-    margin: 8px 0px 8px 0px;
-   /* background-color: #D3D3D3;*/
-    border-radius: 45px;
-    font-size: 15px;
-    /*color: #1E90FF;*/
-}
-
-button#button:hover{
-    background-color: red;
-   /* color: white;*/
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-footer p{
-    display: flex;
-    justify-content: center;
-}
-
-footer small{
-    display: flex;
-    justify-content: center;
 }
 
 @media (min-width:500px){
