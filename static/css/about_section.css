@@ -1,0 +1,29 @@
+#about-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.about-photo figure img {
+    min-width: 260px;
+    min-height: 40vh;
+    max-height: 550px;
+    width: 60vw;
+    border: .6px solid black;
+}
+
+.about-story {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 650px) {
+    .about-photo figure img {
+        width: 400px;
+    }
+}
