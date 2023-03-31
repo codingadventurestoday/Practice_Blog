@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/blog_post.css"></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="logo-display-container">
+        <img src="static/images/logo-display.jpg" alt="an open road leading to a backdrop of mountains">
+        <h3 class="logo-name">Open Road Travel Blog</h3>  
+    </header>
+    <nav>
+        <a href="blog_homepage.html">Home</a>
+        <a href="blog_homepage.html#about-section">My Story </a>
+        <a href="#subscribe">Subscribe</a>
+    </nav>
+    <main>
+        <div class="blogpost_subject">
+            <h3>My Favorite National Parks</h3>
+            <div class="content-container">
+                <p>The first United States of America's National Park was created by President Ulysses Grant. On March 1, 1872 President Grant signed the Yellowstone National Park Protection Act into Law. This created our first national park, Yellowstone!</p>
+                <p>Yellowstone's beauty is truly breath taking. The melting of colors of Yellowstone's hot springs, like the Morning Glory Spring, draws vistors from all over the world</p>
+                <figure>
+                    <img 
+                    srcset="static/images/morning_glory_spring_small.jpg 600w,
+                            static/images/morning_glory_spring.jpg 1000w"
+                    alt="a photo of the morning glory spring of Yellowstone national park"
+                    class="morning-glory">
+                    <figcaption>Photo of the Morning Glory Spring</figcaption>
+                </figure>
+                <p>Another famous draw to Yellowstone national park is the geyser known as Old Faithful. Which erupts on a regular base. This geyser gets it heat and energy from something undernearth Yellowstone most people do not know, the Yellowstone Supervolcano.</p>
+                <p>Volcanos are one of natures more powerful resetters. History books are filled with stories similiar to the famous Pompeii fatal end. The Yellowstone Supervolcano was estimated to have last erupted 640 thosand years ago. It's power is believe to be a destory of life on North America's future.</p>
+                <p>I have next been to Yellowstone, actually. I often fine myself in the national parks of the west coast. With Yosemite being a few hours away I heed it's call for me often. </p>
+            </div>
+        </div>
+        <div id="subscribe">
+            <h3 class="subscribe-subtitle">Subscribe to the Open Road Travel Blog</h3>
+            <form action="not_real" method="POST" class="subscribe-form">
+                <label for="email">Enter your email here!</label>
+                <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                <button onclick="alert('This is not a real website!')" id="button">
+                    click to subscribe!
+                </button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media-container">
+            <a class="twitter" href="https://twitter.com" target="_blank"><img src="static/images/twitter_logo_icon.png"></a>
+            <a class="Facebook" href="https://facebook.com" target="_blank"><img src="static/images/facebook_icon.png"></a>
+            <a class="LinkedIn" href="https://linkedin.com" target="_blank"><img src="static/images/linkedin_social_icon.png"></a>
+        </div>
+        <p>Please do not believe everything you have read online. This is only a project for my Nanodegree :)</p>
+        <small>site created by Coding Adventures Today</small>
+    </footer>
+</body>
