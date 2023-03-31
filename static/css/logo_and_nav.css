@@ -1,0 +1,44 @@
+.logo-display-container img {
+    min-width: 100%;
+    min-height: 30vh;
+    max-height: 40vh;
+    position: relative;
+}
+
+.logo-name {
+    color:antiquewhite;
+    z-index: 1;
+    position: absolute;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    top: 18%;
+    right: 30%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: large;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+@media (min-width: 600px) {
+    .logo-name{
+        right: 35%;
+    }
+}
+
+@media (min-width: 900px) {
+    .logo-name{
+        right: 40%;
+    }
+}
