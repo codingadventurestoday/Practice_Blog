@@ -1,0 +1,16 @@
+@import "logo_and_nav.css";
+@import "subscribe.css";
+
+body {
+    background-image: linear-gradient(to left bottom, #ffedcb, #bcd2ae, #78b4a6, #4491a3, #426a93);
+}
+
+.content-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* size of photo */
+.morning-glory {
+    width: 80vw;
+    border: .5px solid black;
+}
