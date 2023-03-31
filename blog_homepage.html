@@ -1,10 +1,14 @@
-<!DOCTYPE html utf-8>
+<!DOCTYPE html>
 <head>
-    <meta> 
-    <link rel="stylesheet" href="static/css/index.css"></style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="logo-display-container">
+        <img src="static/images/logo-display.jpg" alt="photo of a open road leading to a backdrop of mountains">
         <h3 class="logo-name">Open Road Travel Blog</h3>  
     </header>
     <nav>
@@ -15,32 +19,62 @@
     <main>
         <article id="about-section">
             <div class="about-photo">
-                <img src="static/images/about.jpg">
+                <figure>
+                    <img srcset="static/images/about-small.jpg 400w,
+                                static/images/about-medium.jpg 700w"
+                                alt="photo of a guy hiking">
+                    <figcaption>Not actually me</figcaption>
+                </figure>
             </div>
             <div class="about-story">
-                <p>This is more than just words on a screen. This is the experiences that make up life. Come follow my journey from billion's son to pennyless traveler living life. Growing up my family was the wealthiest in North America. That was until my father invested heavily into FTX and Silicon Valley Bank. After the those life changing events of 2023 alternate my family's path I decision to travel the world. While I can't share the great food and weather, here I can bring you some of the experience. </p>
+                <p>This is more than just words on a screen. This is the experiences that make up life. 
+                    Come follow my journey from billion's son to pennyless traveler living life. 
+                    Growing up my family was the wealthiest in North America. 
+                    That was until my father invested heavily into FTX and Silicon Valley Bank. 
+                    After the those life changing events of 2023 alternate my family's path I decision to travel the world. 
+                    While I can't share the great food and weather, here I can bring you some of the experience. </p>
             </div>
         </article>
-        <div class="suggested-articles-container">
-            <article class="suggested-article" id="article-one">
-                <h3>How to travel Cheap</h3>
-                <img src="static/images/airplane.jpg" alt="" loading="lazy">
-                <a href="">click here</a>
+        <div class="suggested-article-cards-container">
+            <article class="suggested-article-card" id="article-one">
+                <h3>How to travel Cheap with Me</h3>
+                <figure>
+                    <img srcset="static/images/airplane_small.jpg 300w, 
+                    static/images/airplane_medium.jpg 700w" 
+                    alt="Photo of a man in an airport" loading="lazy">
+                    <figcaption>A man in an airport</figcaption>
+                </figure>
+                <a href="blog_post.html">click here</a>
             </article>
-            <article class="suggested-article" id="article-two">
+            <article class="suggested-article-card" id="article-two">
                 <h3>My Favorite National Parks</h3>
-                <img src="static/images/national_park.jpg" alt="" loading="lazy">
-                <a href="">click here</a>
+                <figure>
+                    <img srcset="static/images/national_park_small.jpg 300w,
+                    static/images/national_park.jpg 700w" 
+                    alt="photo of Horseshoe Bend" loading="lazy">
+                    <figcaption>Horseshoe Bend</figcaption>
+                </figure>
+                <a href="blog_post.html">click here</a>
             </article>
-            <article class="suggested-article" id="article-three">
+            <article class="suggested-article-card" id="article-three">
                 <h3>Friends Make This Worth It</h3>
-                <img src="static/images/friendship.jpg" alt="" loading="lazy">
-                <a href="">click here</a>
+                <figure>
+                    <img srcset="static/images/friendship_small.jpg 300w,
+                    static/images/friendship.jpg 700w" 
+                    alt="Photo of four friends hiking" loading="lazy">
+                    <figcaption>Four friends hiking</figcaption>
+                </figure>
+                <a href="blog_post.html">click here</a>
             </article>
-            <article class="suggested-article" id="article-four">
+            <article class="suggested-article-card" id="article-four">
                 <h3>Wood, Water, and Rocks</h3>
-                <img src="static/images/lake.jpg" alt="" loading="lazy">
-                <a href="">click here</a>
+                <figure>
+                   <img srcset="static/images/lake-small.jpg 300w,
+                                static/images/lake_medium.jpg 500w" 
+                   alt="photo of a boat on a lake" loading="lazy">
+                   <figcaption>A boat on a lake</figcaption>
+                </figure>
+               <a href="blog_post.html">click here</a>
             </article>
         </div>
         <div id="subscribe">
@@ -55,6 +89,11 @@
         </div>
     </main>
     <footer>
+        <div class="social-media-container">
+            <a class="twitter" href="https://twitter.com" target="_blank"><img src="static/images/twitter_logo_icon.png"></a>
+            <a class="Facebook" href="https://facebook.com" target="_blank"><img src="static/images/facebook_icon.png"></a>
+            <a class="LinkedIn" href="https://linkedin.com" target="_blank"><img src="static/images/linkedin_social_icon.png"></a>
+        </div>
         <p>Please do not believe everything you have read online. This is only a project for my Nanodegree :)</p>
         <small>site created by Coding Adventures Today</small>
     </footer>
